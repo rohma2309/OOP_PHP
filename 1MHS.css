@@ -1,0 +1,79 @@
+/* Reset beberapa pengaturan default */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk seluruh body */
+body {
+    font-family: Arial, sans-serif; /* Font yang digunakan */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    line-height: 1.6; /* Jarak antar baris */
+    padding: 20px; /* Padding di sekeliling body */
+}
+
+/* Gaya untuk kontainer utama */
+.container {
+    max-width: 800px; /* Lebar maksimum */
+    margin: auto;  /*Pusatkan kontainer */
+
+}
+
+
+/* Gaya untuk judul utama */
+h1 {
+    font-size: 2.5em; /* Ukuran font */
+    margin-bottom: 20px ; /* Margin bawah */
+    color: #2c3e50; /* Warna judul */
+    text-align: center; /* Penjajaran teks ke tengah */
+}
+
+/* Gaya untuk kartu informasi mahasiswa */
+.mahasiswa-card {
+    background-color: #fff; /* Warna latar belakang kartu */
+    border-radius: 12px; /* Sudut melengkung */
+    padding: 20px; /* Padding di dalam kartu */
+    margin-bottom: 20px ; /* Margin bawah */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan kartu */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi */
+}
+
+/* Gaya untuk kartu saat hover */
+.mahasiswa-card:hover {
+    transform: translateY(-5px); /* Mengangkat kartu saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Bayangan lebih gelap saat hover */
+}
+
+/* Gaya untuk setiap baris informasi */
+.info-item {
+    margin-bottom: 10px; /* Margin bawah */
+}
+
+/* Gaya untuk label informasi */
+.info-item label {
+    font-weight: bold; /* Menebalkan label */
+    color: #2980b9; /* Warna label */
+}
+
+/* Gaya untuk footer */
+footer {
+    text-align: center; /* Penjajaran teks ke tengah */
+    margin-top: 20px; /* Margin atas */
+    color: #777; /* Warna teks footer */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Mengurangi padding pada perangkat kecil */
+    }
+
+    .mahasiswa-card {
+        padding: 15px; /* Mengurangi padding pada kartu informasi */
+    }
+
+    h1 {
+        font-size: 2em; /* Mengurangi ukuran font pada perangkat kecil */
+    }
+}
